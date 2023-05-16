@@ -18,6 +18,7 @@ def create_guestbook(request):
         )
 
         new_guestbook_json = {
+            "id": new_guestbook.id,
             "name": new_guestbook.name,
             "message": new_guestbook.message
         }      
