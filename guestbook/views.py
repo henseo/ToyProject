@@ -5,6 +5,16 @@ from django.views.decorators.http import require_http_methods
 from .models import GuestBook
 import json
 
+# TEST
+def hello_world(request):
+    if request.method == "GET":
+        return JsonResponse({
+            'status': 200,
+            'success': True,
+            'message': '메시지 전달 성공!',
+            'data': "Hello World!",
+        })
+
 # Create your views here.
 
 @require_http_methods(["POST"])
