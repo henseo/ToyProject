@@ -14,7 +14,7 @@ def hello_world(request):
             'message': '메시지 전달 성공!',
             'data': "Hello World!",
         })
-
+        
 # Create your views here.
 
 @require_http_methods(["POST"])
