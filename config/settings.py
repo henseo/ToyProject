@@ -58,7 +58,7 @@ PROJECT_APPS = [
 ]
 
 THIRD_PARTY_APPS = [
-    "corsheaders",
+    'corsheaders',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS + THIRD_PARTY_APPS
@@ -81,7 +81,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
     "http://localhost:8000",
     "http://127.0.0.1:8000",
-    "http://likeliontoyproj.kro.kr",
+    "http://likeliontoyproj.kro.kr:8000",
 ]
 
 ROOT_URLCONF = 'config.urls'
